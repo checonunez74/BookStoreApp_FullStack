@@ -12,6 +12,7 @@ export const Carousel = () => {
 
   useEffect(() => {
     const fetchBooks = async () => {
+      
         const baseUrl: string = "http://localhost:8080/api/books";
 
         const url: string = `${baseUrl}?page=0&size=5`;
@@ -98,28 +99,14 @@ export const Carousel = () => {
           </div>
         </div>
 
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+        <button className="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+        <button className="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
